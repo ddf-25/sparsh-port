@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (min-width: 600px) and (max-width: 900px)" href="tab.css">
+    <link rel="stylesheet" media="screen and (max-width: 599px)" href="phone.css">
+    <title>Portfolio-Sparsh</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <img src="images/code.svg" id="logo" alt="logo">
+        <div id="menu-container"> <img src="images/menu.svg" id="menu" alt="" onclick="toggleMenu()"> </div>
+        <div id="toggle">
+            <ul id="navigation">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="recents" class="flexin">
+        <img src="images/1.jpg" alt="1" class="recent-slideshow">
+        <img src="images/2.jpg" alt="2" class="recent-slideshow">
+        <img src="images/3.jpg" alt="3" class="recent-slideshow">
+        <img src="images/4.jpg" alt="4" class="recent-slideshow">
+    </section>
+    <section id="about" class="flexin">
+        <h1 class="h-prim">I'm Sparsh</h1>
+        <div class="intro flexin">
+            <h2 class="h-sec">Hi</h2>
+            <p class="para">
+                I'm a web designer / developer based in India. I have a passion for web design and
+                love to create for web and mobile devices.
+            </p>
+        </div>
+        <h2 class="h-sec">What I can do.</h2>
+        <div id="dos">
+            <div class="flexin" id="dos-1">
+                <h2 class="h-ter">Design What You Want.</h2>
+                <p class="para">
+                    I like to keep it simple. My goals are to focus on typography,
+                    content and conveying the message that you want to send.
+                </p>
+            </div>
+            <div class="flexin" id="dos-2">
+                <h2 class="h-ter">Develop what you need.</h2>
+                <p class="para">
+                    I'm a developer, so I know how to create your website to
+                    run across devices using the latest technologies available.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="sec">
+        <div class="skill-box flexin" id="box-1">
+            <img src="images/web.svg" alt="">
+            <h2 class="h-ter">Front-end Web Designing</h2>
+            <p class="para">I have in-depth knowledge of HTML5, CSS3 and JavaScript(ES6).
+                  Users now use a large variety of devices
+                   with varying screen sizes and resolutions, but all my designs are completely responsive.
+                   Relevant Skills: Wordpress, Bootstrap 4.
+            </p>
+        </div>
+        <div class="skill-box flexin" id="box-2">
+            <img src="images/java.svg" alt="">
+            <h2 class="h-ter">Core Java</h2>
+            <p class="para">I have a sound knowledge of Core Java(Java v1.8).
+                <br>Fact: As of 2019, Java was one of the most popular programming languages
+                 in use according to GitHub,
+                particularly for client-server web applications,
+                 with a reported 9 million developers.
+            </p>
+        </div>
+        <div class="skill-box flexin" id="box-3">
+            <img src="images/dsa.svg" alt="">
+            <h2 class="h-ter">Data Structures and Algorithms</h2>
+            <p class="para"> 
+                Learning data structures and algorithms allow us to write 
+                efficient and optimized computer programs.
+                I'm constantly expanding my knowledge of data structures and algorithms.
+            </p>
+        </div>
+    </section>
+    <section id="contact" class="">
+        <div class="flexin">
+            <h1 class="h-sec">Get in touch</h1>
+            <h2 class="h-ter">I can help.</h2>
+            <h2 class="h-ter">I’m currently available for freelance work.</h2>
+            <p class="para">If you have a project that you want to get started,
+                think you need my help with something or just fancy saying hey, then get in touch.</p>
+                <a onclick="mailto('sparshkhandelwal729cd@gmail.com', 'Subject', 'Body');event.preventDefault()">
+                <button class="btn">Message Me <img src="images/paper-plane.svg" alt=""></button>
+            </a>
+        </div>
+        <div id="socials">
+            <div class="flexin">
+                <a href="https://www.hackerrank.com/Sparsh_25" target="_blank">
+                    <img src="images/h-logo.png" alt="Hackerrank"/>
+                </a>
+                <h2 class="h-ter">Hackerrank</h2>
+            </div>
+            <div class="flexin">
+                <a href="https://www.linkedin.com/in/sparsh-khandelwal-731842142/" target="_blank">
+                    <img src="images/linkedin.svg" alt="linkedin">
+                </a>
+                <h2 class="h-ter">LinkedIn</h2>
+            </div>
+            <div class="flexin">
+                <a href="https://github.com/Sparsh-2512" target="_blank">
+                    <img src="images/github.svg" alt="github">
+                </a>
+                <h2 class="h-ter">GitHub</h2>
+            </div>
+        </div>
+    </section>
+    <footer class="sec flexin">&copy;Sparsh Khandelwal 2020 <hr>
+    <a onclick="mailto('sparshkhandelwal729cd@gmail.com', 'Subject', 'Body');event.preventDefault()">gmail</a>
+
+</footer>
+</body>
+<script src="myScript.js"></script>
+
+</html>

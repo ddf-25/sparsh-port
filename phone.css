@@ -1,0 +1,113 @@
+#navbar{
+    display: grid;
+    grid-template-areas: 'logo logo menu-conatiner menu-container' 'toggle toggle toggle toggle';
+    align-items: center;
+}
+#navbar #toggle{
+    display: none;
+    grid-area: toggle;
+}
+.toggled{
+    display: inline-block !important;
+    animation: opaciti 1s ease 0s 1 forwards;
+}
+#navbar .expand{
+    display: flex;
+    flex-direction: column;
+}
+#navbar #menu{
+    display: inline-block;
+    justify-self: right;
+    margin-right: 10px;
+    cursor: pointer;
+}
+#navbar #menu-container{
+    grid-area: menu-container;
+    justify-self: right;
+}
+/* utilities */
+.h-prim{
+    font-size: 4rem;
+}
+.h-sec{
+    font-size: 1.6rem;
+    margin: 10px auto;
+}
+.h-ter{
+    font-size: 1.4rem;
+}
+.para{
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+#about{
+    padding: 40px 10px;
+}
+#about .intro{
+    margin: 16px 0;
+    padding: 0;
+}
+#about #dos{
+    grid-gap: 1rem;
+margin-top: 1rem;
+}
+#dos-1{
+    justify-self: center;
+width: 100%;
+}
+#dos-2{
+    justify-self: center;
+width: 100%;
+}
+
+#skills{
+    grid-gap: 3rem;
+}
+.skill-box{
+    width: 100%;
+}
+.skill-box img {
+	width: 6rem;
+}
+#box-1{
+    justify-self: center;
+}
+#box-2{
+    justify-self: center;    
+}
+#box-3{
+    justify-self: center;    
+}
+
+#contact h2{
+    text-align: center;
+}
+.btn {
+	width: 8.5rem;
+	font-size: 1.1rem;
+	padding: 8px 5px;
+	margin: 15px 0;
+}
+.btn img {
+	width: 1.1rem;
+}
+#socials{
+    grid-template-columns: none;
+    width: 85%;
+    margin: 25px auto;
+    grid-gap: 2.5rem;
+}
+#socials .h-ter{
+    font-size: 1.3rem;
+}
+
+/* opacity */
+@keyframes opaciti{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
